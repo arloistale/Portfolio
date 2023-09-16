@@ -1,17 +1,32 @@
 import Link from "next/link";
-import Navbar from "../components/navbar";
 import Image from 'next/image';
+import contactHref from '../util/contact';
 
 export default function About() {
   return (
     <main className='flex flex-col'>
-      <Navbar isHomePage={false} />
-      <div className="p-8 mt-20 mb-10">
-        <p>Sky Egg Technologies is a development service and consultancy started by Jon Lu.</p>
-        <div className="mx-auto">
-          <Image src={'/jon.jpg'} alt={"Picture of Jon"} width={500} height={500}/>
+      <div className="mx-auto mt-10 mb-10 w-[75%]">
+        <h2 className='text-2xl font-semibold mb-5'>About</h2>
+        <div className="flex flex-col md:flex-row md:items-center">
+          <Image src={'/jon.jpg'} alt={"Picture of Jon"} width={500} height={500} className="rounded-3xl"/>
+          <div className="py-10 md:py-0 md:ml-10">
+            <p className="mb-4">Sky Egg Technologies is a development service and consultancy started by Jon Lu, a Brooklyn-based software engineer and writer.</p>
+            <p className="mb-4">He's built apps for many industries including games, film, healthcare, and real estate.</p>
+            <p className="mb-4">Some of the brands he's worked with include:</p>
+            <ul className='list-disc pl-5'>
+              <li>Warby Parker</li>
+              <li>Dots</li>
+              <li>ustwo</li>
+            </ul>
+            <p className="mt-4">Thanks for visiting!</p>
+            <p className="mt-8">
+              <Link href="/#work" className="border border-gray-500 text-gray-500 rounded-md px-4 py-2 hover:bg-gray-500 hover:text-white transition duration-300 ease-in-out">See work</Link>
+            </p>
+            <p className="mt-8">
+              <Link href="https://github.com/arloistale" target="_blank" rel="noopener noreferrer" className="border border-gray-500 text-gray-500 rounded-md px-4 py-2 hover:bg-gray-500 hover:text-white transition duration-300 ease-in-out">Visit GitHub</Link>
+            </p>
+          </div>
         </div>
-        <p className="mt-4">Thanks for visiting!</p>
       </div>
     </main>
   );

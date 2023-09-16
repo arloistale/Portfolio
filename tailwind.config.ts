@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       backgroundColor: {
-        'skyegg-orange': "#FF7043"
+        'navbar': "#FF925D",
+        'hero-orange': "#FF925D"
       }
     },
   },

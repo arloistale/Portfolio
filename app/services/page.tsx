@@ -1,19 +1,19 @@
-import Navbar from "../components/navbar";
+import Link from "next/link";
+import contactHref from '../util/contact';
 
 export default function Services() {
   return (
     <main className='flex flex-col'>
-      <Navbar isHomePage={false} />
-      <div className="p-8 mt-20 mb-10">
-        <h2 className='text-2xl font-semibold mb-5'>Hello!</h2>
-        <p>Sky Egg Technologies offers a diverse suite of development services and consultancy.</p>
+      <div className="mx-auto mt-10 mb-10 w-[75%]">
+        <h2 className='text-2xl font-semibold mb-5'>Services</h2>
+        <p>A diverse array of development services and consultancy.</p>
         <p>We craft clean, scalable, tested code. Our app architecture is easy to read, maintain, and iterate upon.</p>
       </div>
-      <div className='mx-auto mt-10 p-8 bg-gray-100 rounded-lg w-[75%]'>
+      <div className='mx-auto p-8 bg-gray-100 rounded-lg w-[75%]'>
         <h2 className='text-2xl font-semibold mb-2'>Mobile Development</h2>
         <ul className='list-disc pl-5'>
-          <li>iOS app development using Swift, SwiftUI</li>
-          <li>Cross-platform mobile apps using Flutter</li>
+          <li>Native iOS app development using Swift, SwiftUI</li>
+          <li>Cross-platform mobile apps using frameworks such as Flutter, React Native</li>
         </ul>
       </div>
       <div className='mx-auto mt-10 p-8 bg-gray-100 rounded-lg w-[75%]'>
@@ -25,14 +25,11 @@ export default function Services() {
       <div className='mx-auto mt-10 p-8 bg-gray-100 rounded-lg w-[75%]'>
         <h2 className='text-2xl font-semibold mb-2'>Web Development</h2>
         <ul className='list-disc pl-5'>
-          <li>Frontend: NextJS, React, Redux, Apollo GraphQL, Typescript, HTML, CSS</li>
-          <li>Backend: FastAPI, Strawberry GraphQL, Python</li>
+          <li>Frontend: NextJS, React, Redux, Typescript, HTML, CSS</li>
+          <li>Backend: FastAPI, GraphQL, Python</li>
           <li>Database: MongoDB, PostgreSQL</li>
-          <li>Other: Docker, AWS Lambda, Git, Netlify, Fly.io</li>
+          <li>Other: Figma, Docker, AWS Lambda, Git</li>
         </ul>
-      </div>
-      <div className="p-8 my-20">
-        <h2 className='text-2xl font-semibold mb-2'>And more... on request!</h2>
       </div>
     </main>
   );

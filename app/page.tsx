@@ -1,26 +1,25 @@
 import Image from 'next/image'
 import PortfolioGrid from './components/portfolio-grid'
-import Link from 'next/link'
-import Navbar from './components/navbar'
 
 export default function Home() {
   return (
-    <main className="flex flex-col ">
-      <Navbar isHomePage={true} />
-      <div className='relative w-full pb-[56.25%]'>
-        <Image
-          src="/hero.jpeg"
-          layout="fill"
-          objectFit='cover'
-          alt="A mood-setting picture."
-        />
-        <div className='z-25 absolute inset-0 flex flex-col justify-center items-center'>
-          <h1 className='text-base sm:text-2xl md:text-3xl font-bold text-white drop-shadow-lg max-w-[75%] mb-4'>Helping companies grow by developing high-impact web and mobile apps.</h1>
-          <Link href="/services" className='sm:mt-[15%] text-white bg-skyegg-orange hover:bg-orange-700 py-3 px-6 rounded-lg transition duration-300 ease-in-out'>SERVICES</Link>
+    <main className="flex flex-col">
+      <div className='-mt-3 md:mt-0 flex flex-col relative w-full h-screen bg-hero-orange justify-center items-center'>
+        <div className="mb-8 transform lg:scale-90 oval-portrait w-48 h-60 sm:w-64 sm:h-80 lg:w-[20rem] lg:h-[24rem]">
+          <Image
+              src="/hero-1.jpg"
+              layout="fill"
+              objectFit='cover'
+              alt="A mood-setting picture."
+          />
         </div>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-white drop-shadow-lg max-w-[75%] mb-32 md:mb-0'>Helping companies grow by developing high-impact web and mobile apps.</h1>
       </div>
 
-      <PortfolioGrid />
+      <div id="work">
+        <PortfolioGrid />
+      </div>
     </main>
   )
 }
+

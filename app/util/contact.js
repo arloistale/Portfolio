@@ -1,0 +1,1 @@
+export default "mailto:skyeggtechnologies@gmail.com";
