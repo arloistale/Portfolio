@@ -3,7 +3,11 @@
 import Link from "next/link";
 import { useState, useEffect } from 'react';
 
-export default function Navbar() {
+interface NavBarProps {
+  isHomePage: boolean
+}
+
+const Navbar: React.FC<NavBarProps> = ({ isHomePage }) => {
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
   
@@ -22,14 +26,14 @@ export default function Navbar() {
     }, [scrolled]);
   
     return (
-      <nav className={`z-50 w-full p-4 transition-all duration-300 ${scrolled ? 'bg-skyegg-orange' : 'md:bg-transparent bg-skyegg-orange'} md:rounded-bl-3xl md:rounded-br-3xl md:fixed md:top-0 md:left-0`}>
+      <nav className={`z-50 w-full p-4 transition-all duration-300 ${(scrolled || !isHomePage) ? 'bg-skyegg-orange' : 'md:bg-transparent bg-skyegg-orange'} md:rounded-bl-xl md:rounded-br-xl ${!isHomePage ? '' : 'md:fixed md:top-0 md:left-0'}`}>
         <div className="container mx-auto flex justify-between items-center">
           <Link href="/" className="text-white text-lg font-bold mx-auto md:mx-0 text-center">Sky Egg Technologies LLC</Link>
           <div className="space-x-6 hidden md:flex">
-            <Link href="/about" className="text-white hover:underline">Home</Link>
+            <Link href="/" className="text-white hover:underline">Home</Link>
             <Link href="/about" className="text-white hover:underline">About</Link>
             <Link href="/services" className="text-white hover:underline">Services</Link>
-            <Link href="/contact" className="text-white hover:underline">Contact</Link>
+            <Link href="mailto:skyeggtechnologies@gmail.com" rel="noopener noreferrer" target="_blank"  className="text-white hover:underline">Contact</Link>
           </div>
         </div>
         <div className="mt-4 flex md:hidden">
@@ -51,3 +55,4 @@ export default function Navbar() {
     );
   }
   
+  export default Navbar;

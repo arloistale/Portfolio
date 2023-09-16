@@ -1,13 +1,12 @@
 import Image from 'next/image'
 import PortfolioGrid from './components/portfolio-grid'
-import Footer from './components/footer'
-import Navbar from './components/navbar'
 import Link from 'next/link'
+import Navbar from './components/navbar'
 
 export default function Home() {
   return (
     <main className="flex flex-col ">
-      <Navbar />
+      <Navbar isHomePage={true} />
       <div className='relative w-full pb-[56.25%]'>
         <Image
           src="/hero.jpeg"
@@ -22,7 +21,6 @@ export default function Home() {
       </div>
 
       <PortfolioGrid />
-      <Footer />
     </main>
   )
 }
