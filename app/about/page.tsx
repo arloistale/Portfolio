@@ -8,7 +8,7 @@ export default function About() {
       <div className="mx-auto mt-10 mb-10 w-[75%]">
         <h2 className='text-2xl font-semibold mb-5'>About</h2>
         <div className="flex flex-col md:flex-row md:items-center">
-          <Image src={'/jon.jpg'} alt={"Picture of Jon"} width={500} height={500} className="rounded-3xl"/>
+          <Image src={"/jon.jpg"} alt={"Picture of Jon"} width={500} height={500} className="rounded-3xl"/>
           <div className="py-10 md:py-0 md:ml-10">
             <p className="mb-4">Sky Egg Technologies is a development service and consultancy started by Jon Lu, a Brooklyn-based software engineer and writer.</p>
             <p className="mb-4">He's built apps for many industries including games, film, healthcare, and real estate.</p>
