@@ -37,7 +37,7 @@ export default function Navbar() {
           </div>
         </div>
         <div className="mt-4 md:hidden flex items-center justify-center">
-          <button onClick={() => setMenuOpen(!menuOpen)} className="mx-auto text-white focus:outline-none">
+          <button aria-label="Toggle Menu" onClick={() => setMenuOpen(!menuOpen)} className="mx-auto text-white focus:outline-none">
             <div className="rounded w-6 h-1 bg-white mb-1"></div>
             <div className="rounded w-6 h-1 bg-white mb-1"></div>
             <div className="rounded w-6 h-1 bg-white"></div>
