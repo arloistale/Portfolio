@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       backgroundColor: {
-        'navbar': "#FF925D",
-        'hero-orange': "#FF925D"
+        'navbar': "#FF7043",
+        'hero-orange': "#FF7043"
       }
     },
   },
