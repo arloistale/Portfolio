@@ -11,8 +11,8 @@ export default function About() {
           <Image src={"/jon.jpg"} alt={"Picture of Jon"} width={500} height={500} className="rounded-3xl"/>
           <div className="py-10 md:py-0 md:ml-10">
             <p className="mb-4">Sky Egg Technologies is a development service and consultancy started by Jon Lu, a Brooklyn-based software engineer and writer.</p>
-            <p className="mb-4">He's built apps for many industries including games, film, healthcare, and real estate.</p>
-            <p className="mb-4">Some of the brands he's worked with include:</p>
+            <p className="mb-4">He has built apps for many industries including games, film, healthcare, and real estate.</p>
+            <p className="mb-4">Some of his clients include:</p>
             <ul className='list-disc pl-5'>
               <li>Warby Parker</li>
               <li>Dots</li>
