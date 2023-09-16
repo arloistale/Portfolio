@@ -8,15 +8,11 @@ export default function About() {
       <Navbar isHomePage={false} />
       <div className="p-8 mt-20 mb-10">
         <p>Sky Egg Technologies is a development service and consultancy started by Jon Lu.</p>
-        <p className="mb-20">Here's a link to his Github: <Link className="hover:underline" href="https://github.com/arloistale" target="_blank" rel="noopener noreferrer">Link</Link></p>
-
         <div className="mx-auto">
           <Image src={'/jon.jpg'} alt={"Picture of Jon"} width={500} height={500}/>
         </div>
-
         <p className="mt-4">Thanks for visiting!</p>
       </div>
-      
     </main>
   );
 }
