@@ -9,8 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       backgroundColor: {
-        'navbar': "#FF7043",
-        'hero-orange': "#FF7043"
+        'navbar': "#ffffff",
+        'hamburger': "#2E4A7D",
+        'hero-blue': "#AEDFF7",
+        'hero-orange': "#FF7C33"
+      },
+      textColor: {
+        'normal': "#2E4A7D",
+        'hero': "#1A3B5D"
       }
     },
   },

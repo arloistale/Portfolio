@@ -25,7 +25,3 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
-.oval-portrait {
-  clip-path: ellipse(50% 50% at 50% 50%);
-}

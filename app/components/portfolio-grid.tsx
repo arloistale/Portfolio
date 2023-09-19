@@ -5,7 +5,7 @@ export default function PortfolioGrid() {
       {
         title: "Recora Health App",
         description: "Built pagination for Recora's flagship Android app, which guides heart health patients to critical resources.",
-        imageUrl: "/recora.jpeg",
+        imageUrl: "/recora.svg",
         linkUrl: "https://www.recora.com/"
       },
       {
