@@ -46,10 +46,10 @@ export default function Navbar() {
         {menuOpen && (
         <div className="lg:hidden absolute top-full left-0 right-0 text-center -mt-3 bg-navbar">
           <div className="py-2">
-            <Link href="/" className="block text-normal mb-2">Home</Link>
-            <Link href="/about" className="block text-normal mb-2">About</Link>
-            <Link href="/services" className="block text-normal mb-2">Services</Link>
-            <Link href={contactHref} className="block text-normal">Contact</Link>
+          <Link href="/" className="block text-normal mb-2" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link href="/about" className="block text-normal mb-2" onClick={() => setMenuOpen(false)}>About</Link>
+          <Link href="/services" className="block text-normal mb-2" onClick={() => setMenuOpen(false)}>Services</Link>
+          <Link href={contactHref} className="block text-normal" onClick={() => setMenuOpen(false)}>Contact</Link>
           </div>
         </div>
       )}

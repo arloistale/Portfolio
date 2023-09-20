@@ -17,6 +17,10 @@ const config: Config = {
       textColor: {
         'normal': "#2E4A7D",
         'hero': "#1A3B5D"
+      },
+      screens: {
+        'xs-2': '200px',
+        'xs': '300px'
       }
     },
   },
