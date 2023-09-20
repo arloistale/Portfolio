@@ -1,10 +1,13 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Source_Code_Pro } from 'next/font/google'
+import { Fira_Sans as MainFont } from 'next/font/google'
 import Navbar from './components/navbar'
 import Footer from './components/footer'
 
-const inter = Source_Code_Pro({ subsets: ['latin'] })
+const inter = MainFont({ 
+  weight: '400',
+  subsets: ['latin'] 
+})
 
 export const metadata: Metadata = {
   title: 'Sky Egg Technologies LLC',
