@@ -12,7 +12,7 @@ const PortfolioItemCard: React.FC<PortfolioItemCardProps> = ({ title, descriptio
     return (
       <Link href={linkUrl} className="bg-gray-50 shadow-sm rounded-lg overflow-hidden hover:underline">
         <div className="relative h-48 w-full">
-          <Image fill src={imageUrl} alt={title} objectFit="cover"/>
+          <Image fill src={imageUrl} alt={title} style={{ objectFit: 'cover' }}/>
         </div>
         <div className="p-4">
           <h2 className="text-lg mb-2 text-gray-700">{title}</h2>

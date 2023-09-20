@@ -13,9 +13,10 @@ interface PortraitProps {
           fill
           src="/jon.jpg"
           alt="Picture of Jon."
-          objectFit="cover"
-          objectPosition='center'
           className='rounded-full'
+          style={{
+            objectFit: 'cover'
+          }}
         />
       </div>
     );
