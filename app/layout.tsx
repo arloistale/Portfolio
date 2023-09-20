@@ -4,8 +4,8 @@ import { Fira_Sans as MainFont } from 'next/font/google'
 import Navbar from './components/navbar'
 import Footer from './components/footer'
 
-const inter = MainFont({ 
-  weight: '400',
+const mainFont = MainFont({ 
+  weight: ['300', '400'],
   subsets: ['latin'] 
 })
 
@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={mainFont.className}>
         <Navbar />
         {children}
         <Footer />
