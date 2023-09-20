@@ -15,6 +15,7 @@ const config: Config = {
       },
       backgroundImage: {
         'hero-gradient': 'linear-gradient(to top left, #AEDFF7, #FFFFFF)',
+        'hero-gradient-small': 'linear-gradient(to top, #AEDFF7, #FFFFFF)',
       },
       textColor: {
         'normal': "#2E4A7D",

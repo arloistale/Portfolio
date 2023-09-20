@@ -10,10 +10,10 @@ interface PortraitProps {
         <div className="absolute inset-0 bg-white rounded-full transform scale-150 "></div>
         <div className="absolute inset-0 bg-gray-300 rounded-full transform scale-105"></div>
         <Image
+          fill
           src="/jon.jpg"
           alt="Picture of Jon."
           objectFit="cover"
-          layout='fill'
           objectPosition='center'
           className='rounded-full'
         />
