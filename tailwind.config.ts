@@ -11,8 +11,10 @@ const config: Config = {
       backgroundColor: {
         'navbar': "#ffffff",
         'hamburger': "#2E4A7D",
-        'hero-blue': "#AEDFF7",
         'hero-orange': "#FF7C33"
+      },
+      backgroundImage: {
+        'hero-gradient': 'linear-gradient(to top left, #AEDFF7, #FFFFFF)',
       },
       textColor: {
         'normal': "#2E4A7D",
