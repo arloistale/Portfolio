@@ -3,6 +3,12 @@ import PortfolioItemCard from "./portfolio-item-card";
 export default function PortfolioGrid() {
     const projects = [
       {
+        title: "goTenna Relay Health Manager App",
+        description: "Built a radio signal health check appliciation for gotenna. Used by conservationists in Africa to ensure the health of their radio mesh network devices.",
+        imageUrl: "/gotenna.svg",
+        linkUrl: "https://gotennapro.com/products/relay-health-manager-app"
+      },
+      {
         title: "Recora Health App",
         description: "Built pagination for Recora's flagship Android app, which guides heart health patients to critical resources.",
         imageUrl: "/recora.svg",
