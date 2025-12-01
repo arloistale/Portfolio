@@ -5,20 +5,8 @@ export default function PortfolioGrid() {
       {
         title: "goTenna Relay Health Manager App",
         description: "Built a radio signal health check appliciation for gotenna. Used by conservationists in Africa to ensure the health of their radio mesh network devices.",
-        imageUrl: "/gotenna.svg",
+        imageUrl: "/gotenna.png",
         linkUrl: "https://gotennapro.com/products/relay-health-manager-app"
-      },
-      {
-        title: "Recora Health App",
-        description: "Built pagination for Recora's flagship Android app, which guides heart health patients to critical resources.",
-        imageUrl: "/recora.svg",
-        linkUrl: "https://www.recora.com/"
-      },
-      {
-        title: "Roots Homes App",
-        description: "Built a property equity growth projection iOS app from scratch.",
-        imageUrl: "/rootshomes.jpeg",
-        linkUrl: "https://www.roots.homes/"
       },
       {
         title: "Warby Parker Virtual Vision Test",
@@ -37,6 +25,18 @@ export default function PortfolioGrid() {
         description: "Architected fun game mechanics, powerful routing framework, and authentication system for hit mobile game Two Dots with Unity.",
         imageUrl: "/twodots.png",
         linkUrl: "https://www.dots.co/twodots/"
+      },
+      {
+        title: "Recora Health App",
+        description: "Built pagination for Recora's flagship Android app, which guides heart health patients to critical resources.",
+        imageUrl: "/recora.svg",
+        linkUrl: "https://www.recora.com/"
+      },
+      {
+        title: "Roots Homes App",
+        description: "Built a property equity growth projection iOS app from scratch.",
+        imageUrl: "/rootshomes.jpeg",
+        linkUrl: "https://www.roots.homes/"
       },
     ];
   
