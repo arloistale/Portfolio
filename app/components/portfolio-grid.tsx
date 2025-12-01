@@ -15,12 +15,6 @@ export default function PortfolioGrid() {
         linkUrl: "https://www.warbyparker.com/virtual-vision-test"
       },
       {
-        title: "Headed South with ustwo",
-        description: "Using experimental gesture-based technology, developed 27 proofs and 3 Android prototypes with Unity.",
-        imageUrl: "/headedsouth.jpeg",
-        linkUrl: "https://ustwo.com/work/google/headed-south/"
-      },
-      {
         title: "Two Dots",
         description: "Architected fun game mechanics, powerful routing framework, and authentication system for hit mobile game Two Dots with Unity.",
         imageUrl: "/twodots.png",
@@ -31,6 +25,12 @@ export default function PortfolioGrid() {
         description: "Built pagination for Recora's flagship Android app, which guides heart health patients to critical resources.",
         imageUrl: "/recora.svg",
         linkUrl: "https://www.recora.com/"
+      },
+      {
+        title: "Headed South with ustwo",
+        description: "Using experimental gesture-based technology, developed 27 proofs and 3 Android prototypes with Unity.",
+        imageUrl: "/headedsouth.jpeg",
+        linkUrl: "https://ustwo.com/work/google/headed-south/"
       },
       {
         title: "Roots Homes App",
